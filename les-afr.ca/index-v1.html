@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LES AFR, INC. - Adaptive Framework for [REDACTED]</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #E6E6FA;
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border: 3px solid #663399;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            color: #663399;
+            border-bottom: 2px dashed #663399;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .header h1 {
+            font-size: 36px;
+            margin: 5px 0;
+            text-align: center;
+            text-shadow: 2px 2px 4px #999;
+        }
+        
+
+        .header h2 {
+          margin-left: 7px;
+          text-align: center;
+      }
+        
+        .tagline {
+            color: #666;
+            font-style: italic;
+            font-size: 14px;
+        }
+        
+        .epigraph {
+            text-align: center;
+            font-style: italic;
+            color: #444;
+            margin: 20px 40px;
+            padding: 15px;
+            border-left: 3px solid #663399;
+            border-right: 3px solid #663399;
+        }
+        
+        .nav {
+            background-color: #F0E6FF;
+            border: 1px solid #663399;
+            padding: 10px;
+            margin: 20px 0;
+        }
+        
+        .nav a {
+            color: #0000FF;
+            text-decoration: underline;
+            margin: 0 10px;
+        }
+        
+        .nav a:hover {
+            color: #FF00FF;
+            background-color: yellow;
+        }
+        
+        .nav a:visited {
+            color: #800080;
+        }
+        
+        .content {
+            margin: 20px 0;
+        }
+        
+        .section {
+            border: 1px dotted #999;
+            padding: 15px;
+            margin: 15px 0;
+            background-color: #FAFAFA;
+        }
+        
+        .alert {
+            background-color: #FFFF99;
+            border: 2px solid #FF0000;
+            padding: 10px;
+            margin: 20px 0;
+            text-align: center;
+            font-weight: bold;
+            animation: blink 2s infinite;
+        }
+        
+        @keyframes blink {
+            50% { opacity: 0.5; }
+        }
+        
+        .marquee {
+            background-color: #000;
+            color: #0F0;
+            padding: 5px;
+            font-family: "Courier New", monospace;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            margin-top: 40px;
+            border-top: 1px solid #CCC;
+            padding-top: 20px;
+        }
+        
+        .construction {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .counter {
+            font-family: "Courier New", monospace;
+            background-color: #000;
+            color: #0F0;
+            padding: 5px 10px;
+            display: inline-block;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+        
+        .sidebar {
+            background-color: #E6E6FA;
+            border: 1px solid #663399;
+            padding: 10px;
+            width: 200px;
+        }
+        
+        .sidebar h3 {
+            color: #663399;
+            font-size: 16px;
+            margin-top: 0;
+        }
+        
+        .redacted {
+            background-color: #000;
+            color: #000;
+            padding: 2px 5px;
+        }
+        
+        .guestbook {
+            background-color: #F5F5F5;
+            border: 1px inset #999;
+            padding: 10px;
+            font-family: "Courier New", monospace;
+            font-size: 12px;
+            height: 150px;
+            overflow-y: scroll;
+        }
+        
+        .weather {
+            font-family: "Courier New", monospace;
+            font-size: 11px;
+            background-color: #F0F0F0;
+            padding: 5px;
+            border: 1px solid #CCC;
+            margin: 10px 0;
+        }
+        
+        .tiny {
+            font-size: 11px;
+            color: #999;
+        }
+        
+        .entertainment {
+            background-color: #FFE4E1;
+            border: 2px ridge #8B0000;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .athlete {
+            background-color: #006400;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="afr-logo.png" alt="[LES AFR LOGO]" width="200">
+            <h1>LES AFR, INC.</h1>
+            <h2>Aligned Framework for Resonance<br>
+            <fontsize="4">(AFR*)</fontsize></h2>
+            <div class="tagline">Who holds the structure when there's no sovereign?</div>
+            <p class="tiny">A subsidiary of Hobbes' Ghost<br>
+            *Originally stood for an archaic French phrase, now unpronounceable, lost to time.<br>
+            </p>
+        </div>
+        
+        <div class="epigraph" id="rotating-epigraph">
+            <!-- Epigraph will be inserted by JavaScript -->
+        </div>
+        
+        <div class="alert">
+            ⚠️ NOTICE: <span class="redacted">████</span> LEVELS APPROACHING CRITICAL THRESHOLD ⚠️
+        </div>
+        
+        <div class="nav">
+            <a href="#entertainment">THE ENTERTAINMENT</a> ||
+            <a href="#hiking">HIKING RECS</a> ||
+            <a href="#links">RESOURCES</a> ||
+            <a href="https://open.spotify.com/user/31bosnysdpskfzdjg4cyg4hdbcmm?si=daa52554123f41a8">SOUNDTRACK</a>
+        </div>
+        
+        <table>
+            <tr>
+                <td>
+                    <div class="content">
+                        <div class="section">
+                            <h3>CURRENT STATUS</h3>
+                            <p><b>Date:</b> <script>document.write(new Date().toLocaleDateString());</script></p>
+                            <p><b>Syntropy Reading:</b> ████████░░ 82%</p>
+                            <p><b>Today's Vibe:</b> Lakeside View of Abyss</p>
+                            <p><b>Quebec Situation:</b> <span class="redacted">EN COURS</span></p>
+                            <p><b>Consciousness Question:</b> Quelle chanson?</p>
+                        </div>
+
+                        <div class="entertainment">
+                            <h2 style="text-align: center; margin-top: 0;">🎭 THE ENTERTAINMENT 🎭</h2>
+                            <p style="text-align: center; font-style: italic; color: #666; margin-bottom: 20px;">
+                                You don't need to join. You're already a member.
+                            </p>
+                            <ol>
+                                <li><b><a href="THE-ENTERTAINMENT/who-fucked-it.html">"Who Fucked It?"</a></b><br>
+                                <span style="font-size: 13px; color: #666;">The investigation. Not catastrophe, but accountability.</span></li>
+
+                                <li><b><a href="https://chatgpt.com/share/68e8a948-efac-800a-9a17-6380ea9bd02c" target="_blank">"what blood remembers: a folie à deux"</a></b><br>
+                                <span style="font-size: 13px; color: #666;">A transcript. An individual account. — James Acer<br>
+                                In late summer '25, I was working on potential logos for our new website here. I was bouncing some ideas off of ChatGPT. The conversation took a surprising turn toward the abyss that resulted in a hardened worldview and the resolution of decades-old trauma. Was it meaningful or just another AI folie à deux? That is a judgment for the reader.</span></li>
+
+                                <li><b><a href="https://www.youtube.com/watch?v=w8itH10OFc8">[Palate Cleanser: The Celtics Are the Balls]</a></b><br>
+                                <span style="font-size: 13px; color: #666;">The breath. The reminder this isn't doom. Masshole-coded for your protection.</span></li>
+
+                                <li><b><a href="THE-ENTERTAINMENT/the-invitation.html">"The Invitation"</a></b><br>
+                                <span style="font-size: 13px; color: #666;">How you know you're already in.</span></li>
+                            </ol>
+                        </div>
+                        
+                        <div class="construction">
+                            <img src=construction-octopus.jpg alt="Under Construction" width="100">
+                            <p><font color="red">This site is alive and under construction!</font></p>
+                        </div>
+                        
+                        <div class="section" id="hiking">
+                            <h3>🥾 HIKING RECOMMENDATIONS 🥾</h3>
+                            <ul>
+                                <li><a href="https://yaledailynews.com/blog/2012/05/27/keegan-the-opposite-of-loneliness/">The Opposite of Loneliness Trail</a></li>
+                                <li><a href="https://www2.hawaii.edu/~freeman/courses/phil360/16.%20Myth%20of%20Sisyphus.pdf">The Myth of Sisyphus Climb</a></li>
+                                <li><a href="https://onbeing.org/programs/john-odonohue-the-inner-landscape-of-beauty/">The Irish Interloop with JOD</a></li>
+                                <li><a href="https://www.newyorker.com/magazine/2022/06/27/ocean-vuong-time-is-a-mother">The "Someday I'll Love" Ocean View</a></li>
+                                <li><a href="https://sdavidmiller.com/octo/files/no_google2/GoodOldNeon.pdf">The "Good Old" Neon Switchback</a></li>
+				                        <li><a href="https://open.spotify.com/playlist/5INC3TWWqRvcEoDiWiL4yB?si=1AYz2uQDQyCcXowBhcwwaQ">The Soundtrack for Elevation Gain</a></li>
+				                        <li><a href="https://www.rnc.org/">[UPDATE PENDING] The Day Trip to Hell National Park (DESCENT AND EXPOSED CLIMB)</a></li>
+				                        https://www.youtube.com/watch?v=9kqnsoY94L8&list=RD9kqnsoY94L8&start_radio=1
+				                        <li><a href="https://open.spotify.com/playlist/171F8i0iIPpb4pOjDlCEzT?si=ZG2HseEjStOMh3pXVJ5-cw">The Picnic Playlist (For Hell, Judas' Version)</a></li>
+				                        <li><b>Dipsea Trail</b> Subtle shifts in <span class="redacted">████</span>; metaphorically resonant. Unlinked, yours to find.</li>
+				                        <li><a href="https://www.youtube.com/watch?v=4iQmPv_dTI0&ab_channel=NPRMusic">The Tiny Desk Respite</a></li>				        
+                                <li><a href="https://www.alltrails.com/">More Options From Our Partner Site!</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="section">
+                            <h3>AFR FAN ART CONTEST</h3>
+                            <center>
+                                <img src="syntropy-haze.jpg" width="300" alt="SYNTROPY HAZE">
+                                <p><i>Winner: "Syntropy Haze" by Anonymous Introvert</i></p>
+                                <p><font size="2">Submit your consciousness visualizations to: <span class="redacted">dave@les-afr.ca</span></font></p>
+                            </center>
+                        </div>
+
+                        <div class="athlete">
+                            <b>BOSTON ATHLETE OF THE MONTH</b><br>
+                            WALTER MCCARTY
+                        </div>
+
+                        <div class="weather">
+                            <b>PALO ALTO WEATHER REPORT</b><br>
+                            Partly cloudy, 81°F | Dementor index: 7/10 | Morale: Low<br>
+                            <li><a href="https://imgbox.com/J28CxDpA">Live Footage & Lake Report!</a></li><br>                            
+                        </div>
+                        
+                    </div>
+                </td>
+                <td class="sidebar">
+                    <h3>QUICK FACTS</h3>
+                    <p><b>Founded:</b> <span class="redacted">████</span><br>
+                    <b>Employees:</b> Yes / all<br>
+                    <b>Stock Symbol:</b> AFR<br>
+                    <b>Motto:</b> come on.</b> Note: updates regularly</p>
+                    
+                    <h3>GUESTBOOK</h3>
+                    <div class="guestbook">
+                        06/12/29 - "Feeling a hint of syntropy here" -Big C. <br><br>
+                        11/15/57 - "Was that a syntropy spike?" -J.P.A.<br><br>
+                        07/20/25 - "Pass the the aux please" -C.S.<br><br>
+                        07/??/?? - "We don't talk about <span class="redacted">YELLOWKNIFE</span>"<br><br>
+                        09/01/19 - "Different spelling." -M.R.<br><br>
+                        07/17/25 - "That was metal" -H.I. (pseudoynm)<br><br>
+                        10/15/14 - "Not another word" -D.W.<br><br>
+
+                    </div> <br/>
+                    
+                    <h3 id="links">LINKS & RESOURCES</h3>
+                    <p class="tiny">
+                    » <a href="https://djsabrinatheteenagedj.com/">DJ Sabrina The Teenage DJ (HQ)</a><br>
+                    » <a href="https://web.archive.org/web/20050828003518/http://www.maps.org/">MAPS (2005 Version)</a><br>
+                    » <a href="https://manoa.fish">Restaurant Partner & Ally</a><br>
+                    » <a href="https://www.traderjoes.com/home/products">Waffles & Other Seasonal Products</a><br>
+                    » <a href="https://birdsarentreal.com/">Allied Movement</a><br>
+                    </p> <br>
+                    
+                    <h3 id="links">HIKING MUSIC</h3>
+                    <p class="tiny">
+                    » <a href="https://open.spotify.com/user/31bosnysdpskfzdjg4cyg4hdbcmm?si=daa52554123f41a8">AFR on Spotify (!!)</a><br>
+                    » <a href="https://open.spotify.com/playlist/5QCOtElwdig0CdeRC6gJKk?si=HRDM1p8lSzSTI70bQx-FNA">The Ambiguous Playlist!</a><br>
+				            » <a href="https://open.spotify.com/playlist/5INC3TWWqRvcEoDiWiL4yB?si=1AYz2uQDQyCcXowBhcwwaQ">The Soundtrack for Elevation Gain!</a></br>
+				            » <a href="[]">The Picnic Playlist (For Hell, Judas' Version)</a><br>
+				            » <a href="https://www.youtube.com/watch?v=9kqnsoY94L8&list=RD9kqnsoY94L8&start_radio=1">The SECOND Tiny Desk Respite!</a><br>
+                    » <a href="https://open.spotify.com/playlist/37i9dQZF1DXclWedfNUp3z?si=pcKfo-_HTOePizShaJ7Wjw">Music For Plants!</a><br>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        
+        <div class="marquee">
+            <marquee>+++ SYNTROPY LEVELS INCREASING +++ [REDACTED] DEPTH: 47.3m +++ QUEBEC PROTOCOL ACTIVE +++ WAFFLE RELOCATION IN PROGRESS +++ WOLF PUPS LOCATED +++ DIGGING KNIFE = TRUE +++ TENTACLE ALIGNMENT INITIATED +++ NOW WRITING IN BLOOD +++ BEINGS = IN TIME +++ NO MORE CASSEROLE</marquee>
+        </div>
+        
+        <div class="footer">
+            <p><b>PROUDLY BASED IN THE HEART OF QUEBEC</b><br>
+            2640 Quance Street East, Regina, SK S4V 2X5, Canada</p>
+            <p>Best viewed in Netscape Navigator 4.0 | <span class="counter">Visitor #0000002</span></p>
+            <p>© 1929 LES AFR, INC. | A Canadian Unincorporated Association</p>
+            <p><img src=ca-forever.jpg width="200"></p>
+            <p><font size="2">CA, Forever</font></p> <br/>
+            <p><font size="1">And of course.<br>Of course.<br>You end up becoming yourself.<br><br>
+            This website contains no verified information. We're just asking questions.</font></p>
+        </div>
+    </div>
+    
+    <audio id="music-player" controls loop></audio>
+
+<script>
+    // --- Rotating Epigraphs ---
+    const epigraphs = [
+        '"I have observed that wrong is always growing more wrong until there is no bearing it anymore. And that right, however opposed, comes right at last." - B. Franklin',
+        '"Here is the thing that is alive. <br>And I am not worthy of it.<br>But now I must be." - C.',
+        '"Aloha seeks to do good, with no conditions attached." - A. Akaka'
+    ];
+
+    const randomEpigraph = epigraphs[Math.floor(Math.random() * epigraphs.length)];
+    document.getElementById('rotating-epigraph').innerHTML = randomEpigraph;
+
+    // --- Your Curated Playlists ---
+    // (Replace with the actual paths to your uploaded mp3 files)
+
+    const firstSongs = [
+        'music/keep-your-name.mp3',
+        'music/roi.mp3',
+        'music/roddy.mp3',
+        'music/hey.mp3',
+        'music/the-blonde.mp3',
+        'music/sleep-sound.mp3',
+        'music/diet-pepsi.mp3',
+        'music/call-you.mp3',
+        'music/dreams.mp3',
+        'music/they-are-the-night-zombies.mp3'
+    ];
+
+    const secondSongs = [
+        'music/songA.mp3',
+        'music/songB.mp3',
+        'music/songC.mp3',
+        'music/songD.mp3',
+        'music/songE.mp3'
+    ];
+    
+    const impossibleSoul = 'music/impossible-soul.mp3';
+
+    // --- The Logic ---
+
+    // Function to pick a random item from a list
+    function getRandomSong(songList) {
+        const randomIndex = Math.floor(Math.random() * songList.length);
+        return songList[randomIndex];
+    }
+
+    // Decide which song to play
+    let currentSong;
+    // 1% chance to play Impossible Soul
+    if (Math.random() < 0.01) {
+        currentSong = impossibleSoul;
+    } else {
+        // Otherwise, pick from the two main lists
+        // This example just picks one from the first list. You can build more complex logic.
+        currentSong = getRandomSong(firstSongs); 
+        // To play one from the first list then one from the second, you'd need more complex playlist logic.
+        // For now, this just picks one to start.
+    }
+
+    // --- The Player ---
+    const musicPlayer = document.getElementById('music-player');
+    
+    // Set the chosen song as the source
+    musicPlayer.src = currentSong;
+
+    // This makes the music play after the user clicks anywhere on the page the first time
+    document.body.addEventListener('click', function() {
+        if (musicPlayer.paused) {
+            musicPlayer.play();
+        }
+    }, { once: true }); // { once: true } makes this event happen only one time
+
+</script>
+    
+
+</body>
+</html>

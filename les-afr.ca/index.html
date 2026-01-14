@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[What is the name??]</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #E6E6FA;
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            border: 3px solid #663399;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: #663399;
+            border-bottom: 2px dashed #663399;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            margin: 5px 0;
+            text-shadow: 2px 2px 4px #999;
+        }
+
+        .header h2 {
+            margin-left: 7px;
+        }
+
+        .tagline {
+            color: #666;
+            font-style: italic;
+            font-size: 14px;
+        }
+
+        .epigraph {
+            text-align: center;
+            font-style: italic;
+            color: #444;
+            margin: 20px 40px;
+            padding: 15px;
+            border-left: 3px solid #663399;
+            border-right: 3px solid #663399;
+        }
+
+        .construction {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .alert {
+            background-color: #FFFF99;
+            border: 2px solid #FF0000;
+            padding: 10px;
+            margin: 20px 0;
+            text-align: center;
+            font-weight: bold;
+            animation: blink 2s infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0.5; }
+        }
+
+        .content {
+            margin: 20px 0;
+        }
+
+        .section {
+            border: 1px dotted #999;
+            padding: 15px;
+            margin: 15px 0;
+            background-color: #FAFAFA;
+        }
+
+        .starter-pack {
+            background-color: #FFE4E1;
+            border: 2px ridge #8B0000;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .vibes-table {
+            font-family: "Courier New", monospace;
+            font-size: 11px;
+            background-color: #F0F0F0;
+            padding: 10px;
+            border: 1px solid #CCC;
+            margin: 15px 0;
+        }
+
+        .vibes-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .vibes-table th {
+            background-color: #663399;
+            color: white;
+            padding: 5px;
+            text-align: left;
+            font-size: 10px;
+        }
+
+        .vibes-table td {
+            padding: 5px;
+            border-bottom: 1px dotted #CCC;
+            font-size: 10px;
+        }
+
+        table.layout {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table.layout td {
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        .sidebar {
+            background-color: #E6E6FA;
+            border: 1px solid #663399;
+            padding: 10px;
+            width: 220px;
+        }
+
+        .sidebar h3 {
+            color: #663399;
+            font-size: 14px;
+            margin: 15px 0 10px 0;
+        }
+
+        .sidebar h3:first-child {
+            margin-top: 0;
+        }
+
+        .guestbook {
+            background-color: #F5F5F5;
+            border: 1px inset #999;
+            padding: 10px;
+            font-family: "Courier New", monospace;
+            font-size: 11px;
+            height: 140px;
+            overflow-y: scroll;
+            margin-bottom: 15px;
+        }
+
+        .athlete-box {
+            background-color: #006400;
+            color: white;
+            padding: 8px;
+            text-align: center;
+            font-size: 11px;
+            margin: 15px 0;
+        }
+
+        .tiny {
+            font-size: 11px;
+            color: #999;
+        }
+
+        .redacted {
+            background-color: #000;
+            color: #000;
+            padding: 2px 5px;
+        }
+
+        .marquee {
+            background-color: #000;
+            color: #0F0;
+            padding: 5px;
+            font-family: "Courier New", monospace;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            margin-top: 40px;
+            border-top: 1px solid #CCC;
+            padding-top: 20px;
+        }
+
+        .counter {
+            font-family: "Courier New", monospace;
+            background-color: #000;
+            color: #0F0;
+            padding: 5px 10px;
+            display: inline-block;
+        }
+
+        a {
+            color: #0000FF;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #FF00FF;
+            background-color: yellow;
+        }
+
+        a:visited {
+            color: #800080;
+        }
+
+        #music-player {
+            width: 100%;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="afr-logo.png" alt="[LES AFR LOGO]" width="200">
+            <h1>LES AFR, INC.</h1>
+            <h2>Aligned Framework for Resonance<br>
+            <fontsize="4">(AFR*)</fontsize></h2>
+            <div class="tagline">Who holds the structure when there's no sovereign?</div>
+            <p class="tiny">A subsidiary of <span class="redacted">Hob████ █████</span></p>
+        </div>
+
+        <div class="epigraph" id="rotating-epigraph" style="cursor: pointer; position: relative; user-select: none;">
+            <span style="position: absolute; left: 10px; top: 50%; transform: translateY(-50%); font-size: 20px; color: #999;" id="prev-arrow">‹</span>
+            <div id="epigraph-content" style="padding: 0 40px;">
+                <!-- Epigraph will be inserted by JavaScript -->
+            </div>
+            <span style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); font-size: 20px; color: #999;" id="next-arrow">›</span>
+        </div>
+
+        <div class="construction" style="text-align: left; display: flex; align-items: center; gap: 15px;">
+            <img src="construction-octopus.jpg" alt="Under Construction" width="100">
+            <p style="margin: 0;"><font color="red">This site is alive and under construction!</font></p>
+        </div>
+
+        <div class="alert">
+            ⚠️ NOTICE: <span class="redacted">████</span> LEVELS APPROACHING CRITICAL THRESHOLD ⚠️
+        </div>
+
+        <table class="layout">
+            <tr>
+                <td>
+                    <div class="content">
+                        <div class="section">
+                            <h3>CURRENT STATUS</h3>
+                            <p><b>Date:</b> <script>document.write(new Date().toLocaleDateString());</script></p>
+                            <p><b>Syntropy Reading:</b> ████████░░ 82%</p>
+                            <p><b>Today's Vibe:</b> Lakeside View of Abyss</p>
+                            <p><b>Quebec Situation:</b> <span class="redacted">EN COURS</span></p>
+                            <p><b>Consciousness Question:</b> Quelle chanson?</p>
+                        </div>
+
+                        <div class="starter-pack">
+                            <h2 style="text-align: center; margin-top: 0;">🎭 Conspirator Starter Pack 🎭</h2>
+                            <p style="text-align: center; font-style: italic; color: #666; margin-bottom: 20px;">
+                                Key assets for doing science with vibes 🪩
+                            </p>
+                            <ol>
+                                <li><b><a href="XXX/xxx.xxx">"Filename"</a></b><br>
+                                <span style="font-size: 13px; color: #666;">Add doc link or text block + fill out others</
+                                Additional detail if needed    
+                                span></li>
+
+                            </ol>
+                        </div>
+
+                        <div class="vibes-table">
+                            <h3 style="margin-top: 0; color: #663399;">🌍 GLOBAL VIBES MONITORING STATION 🌍</h3>
+                            <table>
+                                <tr>
+                                    <th>LOCATION</th>
+                                    <th>CURRENT VIBES</th>
+                                    <th>FORECAST</th>
+                                </tr>
+                                <tr>
+                                    <td>Palo Alto, CA</td>
+                                    <td>Pleasant, wisps of unacknowledged sadness ("something feels off?")</td>
+                                    <td>Reckoning point</td>
+                                </tr>
+                                <tr>
+                                    <td>Glasgow, UK</td>
+                                    <td>Dreary but honest; unassuming</td>
+                                    <td>Things come back around</td>
+                                </tr>
+                                <tr>
+                                    <td>Medford, MA</td>
+                                    <td>Scratchies, cigs, & other portal objects</td>
+                                    <td>"Colleen is coming"</td>
+                                </tr>
+                                <tr>
+                                    <td>Beijing, CN</td>
+                                    <td>Old-school industrialism; honest authoritarian</td>
+                                    <td>Could be worse but could be better</td>
+                                </tr>
+                                <tr>
+                                    <td>Coney Island, NYC</td>
+                                    <td>Sacred camp; void refusals</td>
+                                    <td>No one is ever missing</td>
+                                </tr>
+                                <tr>
+                                    <td>Regina, SK</td>
+                                    <td>Bureaucratic hauntedness; wheat ghosts</td>
+                                    <td>Headquarters holding</td>
+                                </tr>
+                                <tr>
+                                    <td>Phoenix, AZ</td>
+                                    <td>Desert clarity meets strip mall ennui</td>
+                                    <td>Nov 27: arrival</td>
+                                </tr>
+                                <tr>
+                                    <td>The Internet</td>
+                                    <td>Performance anxiety at scale</td>
+                                    <td>The gap widens slightly</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="section">
+                            <h3>📜 LEISURE READING 📜</h3>
+                            <p style="font-style: italic; color: #666; font-size: 13px; margin-bottom: 15px;">Hikes we like and cairns we've noticed</p>
+                            <table style="width: 100%; border-collapse: collapse;">
+                                <tr style="background-color: #f0f0f0; border-bottom: 2px solid #663399;">
+                                    <th style="padding: 8px; text-align: left; font-size: 12px;">NOTE</th>
+                                    <th style="padding: 8px; text-align: left; font-size: 12px;">AUTHOR</th>
+                                    <th style="padding: 8px; text-align: left; font-size: 12px;">DESCRIPTION</th>
+                                <tr style="background-color: #f0f0f0; border-bottom: 2px solid #663399;">
+                                    <th style="padding: 8px; text-align: left; font-size: 12px;">NOTE</th>
+                                    <th style="padding: 8px; text-align: left; font-size: 12px;">AUTHOR</th>
+                                    <th style="padding: 8px; text-align: left; font-size: 12px;">DESCRIPTION</th>
+                                <tr style="background-color: #f0f0f0; border-bottom: 2px solid #663399;">
+                                    <th style="padding: 8px; text-align: left; font-size: 12px;">NOTE</th>
+                                    <th style="padding: 8px; text-align: left; font-size: 12px;">AUTHOR</th>
+                                    <th style="padding: 8px; text-align: left; font-size: 12px;">DESCRIPTION</th>
+                                <tr style="background-color: #f0f0f0; border-bottom: 2px solid #663399;">
+                                    <th style="padding: 8px; text-align: left; font-size: 12px;">NOTE</th>
+                                    <th style="padding: 8px; text-align: left; font-size: 12px;">AUTHOR</th>
+                                    <th style="padding: 8px; text-align: left; font-size: 12px;">DESCRIPTION</th>
+                                <tr style="background-color: #f0f0f0; border-bottom: 2px solid #663399;">
+                                    <th style="padding: 8px; text-align: left; font-size: 12px;">NOTE</th>
+                                    <th style="padding: 8px; text-align: left; font-size: 12px;">AUTHOR</th>
+                                    <th style="padding: 8px; text-align: left; font-size: 12px;">DESCRIPTION</th>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="section">
+                            <h3>🎵 MUSIC PLAYER 🎵</h3>
+                            <div style="background-color: #f9f9f9; padding: 15px; border: 1px solid #ddd;">
+                                <div style="margin-bottom: 10px; font-weight: bold; color: #663399; font-size: 13px;" id="now-playing">
+                                    Now Playing: ...
+                                </div>
+                                <audio id="music-player" controls style="width: 100%; margin-bottom: 10px;"></audio>
+                                <div style="text-align: center; margin-bottom: 10px;">
+                                    <button onclick="prevSong()" style="padding: 5px 15px; margin: 0 5px; cursor: pointer;">⏮ Prev</button>
+                                    <button onclick="nextSong()" style="padding: 5px 15px; margin: 0 5px; cursor: pointer;">Next ⏭</button>
+                                </div>
+                                <div style="max-height: 200px; overflow-y: auto; font-size: 11px; font-family: 'Courier New', monospace; background-color: white; padding: 10px; border: 1px solid #ddd;">
+                                    <div id="playlist"></div>
+                                </div>
+                            </div>
+                            <p class="tiny" style="margin-top: 10px;">Click anywhere on the page to start. 1% chance of Impossible Soul.</p>
+                        </div>
+
+                        <div class="section">
+                            <h3>IMAGE GALLERY</h3>
+                            <center>
+                                <img src="filename" width="300" alt="No image yet">
+                                <p><i>Add some weird random fun pictures? I have lots</i></p>
+                                <p><font size="2">Description if needed
+                            </center>
+                        </div>
+
+                    </div>
+                </td>
+                <td class="sidebar">
+                    <h3>QUICK FACTS</h3>
+                    <p class="tiny"><b>Founded:</b> <span class="redacted">████</span><br>
+                    <b>Employees:</b> Yes / all<br>
+                    <b>Stock Symbol:</b> TBD<br>
+                    <b>Motto:</b> Also TBD!<br>
+                    <font size="1">Note: updates regularly</font></p>
+
+                    <h3>GUESTBOOK</h3>
+                    <div class="message board">
+                        06/12/29 - "XXX" -XXX <br><br>
+                        10/12/25 - "XXX" -XXX <br><br>
+                        10/12/25 - "XXX" -XXX <br><br>
+                        10/12/25 - "XXX" -XXX <br><br>
+                        10/12/25 - "XXX" -XXX <br><br>
+                        10/12/25 - "XXX" -XXX <br><br>
+                    </div>
+
+                    <div class="athlete-box">
+                        <b>DIVA OF THE MONTH</b><br>
+                        CHARLI XCX!!! (4TH consecutive) 🪩 💅 ✨
+                    </div>
+
+                    <h3>LINKS & RESOURCES</h3>
+                    <p class="tiny">
+                    » <a href="https://djsabrinatheteenagedj.com/">DJ Sabrina The Teenage DJ (HQ)</a><br>
+                    » <a href="https://web.archive.org/web/20050828003518/http://www.maps.org/">MAPS Website 2005 Version (this is real)</a><br>
+                    » <a href="link">XXXX</a><br>
+                    » <a href="link">XXXX</a><br>
+                    » <a href="link">XXXX</a><br>                   
+                    </p>
+
+                    <h3>Anything Else??</h3>
+                    <p class="tiny">
+                    » <a href="url">XXX</a><br>
+                    » <a href="url">XXX</a><br>
+                    » <a href="url">XXX</a><br>
+                    » <a href="url">XXX</a><br>
+                    » <a href="url">XXX</a><br>
+                    » <a href="https://open.spotify.com/playlist/37i9dQZF1DXclWedfNUp3z?si=pcKfo-_HTOePizShaJ7Wjw">Music For Plants!</a><br>
+                    </p>
+                </td>
+            </tr>
+        </table>
+
+        <div class="marquee">
+            <marquee>+++ [ADD CHAOTIC UPDATES!!] +++ [REDACTED] DEPTH: 47.3m +++ QUEBEC PROTOCOL ACTIVE +++ XXXXXX +++ XXXXX +++ XXXXXX +++ XXXXX +++ XXXXX +++ XXXXXXX +++ XXXXXXX </marquee>
+        </div>
+
+        <div class="footer">
+            <p><b>PROUDLY BASED IN THE [SOMEWHERE???]</b><br>
+            [ADD FAKE ADDRESS]</p>
+            <p>Best viewed in Netscape Navigator 4.0 | <span class="counter">Visitor #0000002</span></p>
+            <p>© 1929 [NAME] | An Unincorporated Association</p>
+            <p><font size="1">And of course.<br>Of course.<br>You end up becoming yourself.<br><br>
+            We are being funny, but we're not joking. </font></p>
+        </div>
+    </div>
+
+<script>
+    // --- Carousel Epigraphs ---
+    const epigraphs = [
+        '"XXXX" - WhoSaidIt',
+        '"XXXX" - WhoSaidIt',
+        '"XXXX" - WhoSaidIt',
+        '"XXXX" - WhoSaidIt',
+        '"XXXX" - WhoSaidIt',
+        '"XXXX" - WhoSaidIt',
+        '"Your mom called." - Lana Del Rey',
+    ];
+
+    let currentEpigraphIndex = Math.floor(Math.random() * epigraphs.length);
+
+    function showEpigraph(index) {
+        document.getElementById('epigraph-content').innerHTML = epigraphs[index];
+    }
+
+    function nextEpigraph() {
+        currentEpigraphIndex = (currentEpigraphIndex + 1) % epigraphs.length;
+        showEpigraph(currentEpigraphIndex);
+    }
+
+    function prevEpigraph() {
+        currentEpigraphIndex = (currentEpigraphIndex - 1 + epigraphs.length) % epigraphs.length;
+        showEpigraph(currentEpigraphIndex);
+    }
+
+    // Initialize
+    showEpigraph(currentEpigraphIndex);
+
+    // Click handlers
+    document.getElementById('next-arrow').addEventListener('click', (e) => {
+        e.stopPropagation();
+        nextEpigraph();
+    });
+
+    document.getElementById('prev-arrow').addEventListener('click', (e) => {
+        e.stopPropagation();
+        prevEpigraph();
+    });
+
+    document.getElementById('epigraph-content').addEventListener('click', nextEpigraph);
+
+    // --- Music Player ---
+    const songs = [
+        { file: 'music/keep-your-name.mp3', title: 'Keep Your Name - Dirty Projectors' },
+        { file: 'music/roi.mp3', title: 'roi - Videoclub' },
+        { file: 'music/roddy.mp3', title: 'Roddy - Djo' },
+        { file: 'music/hey.mp3', title: 'Hey - Pixies' },
+        { file: 'music/the-blonde.mp3', title: 'The Blonde - TV Girl' },
+        { file: 'music/sleep-sound.mp3', title: 'Sleep Sound - Jamie xx' },
+        { file: 'music/diet-pepsi.mp3', title: 'Diet Pepsi - Addison Rae' },
+        { file: 'music/call-you.mp3', title: 'Call You - DJ Sabrina the Teenage DJ' },
+        { file: 'music/dreams.mp3', title: 'Dreams - Fleetwood Mac' },
+        { file: 'music/they-are-the-night-zombies.mp3', title: 'They Are the Night Zombies - Sufjan Stevens' },
+        { file: 'music/impossible-soul.mp3', title: '⚡ IMPOSSIBLE SOUL - Sufjan Stevens (25 min)', special: true }
+    ];
+
+    let currentSongIndex = 0;
+    let playlist = [...songs];
+
+    // 1% chance to start with Impossible Soul
+    if (Math.random() < 0.01) {
+        currentSongIndex = playlist.findIndex(s => s.special);
+    } else {
+        // Shuffle and pick first song (excluding Impossible Soul)
+        const normalSongs = playlist.filter(s => !s.special);
+        currentSongIndex = Math.floor(Math.random() * normalSongs.length);
+        currentSongIndex = playlist.findIndex(s => s.file === normalSongs[currentSongIndex].file);
+    }
+
+    const musicPlayer = document.getElementById('music-player');
+
+    function loadSong(index) {
+        currentSongIndex = index;
+        const song = playlist[currentSongIndex];
+        musicPlayer.src = song.file;
+        document.getElementById('now-playing').textContent = `Now Playing: ${song.title}`;
+        updatePlaylist();
+    }
+
+    function nextSong() {
+        currentSongIndex = (currentSongIndex + 1) % playlist.length;
+        loadSong(currentSongIndex);
+        musicPlayer.play();
+    }
+
+    function prevSong() {
+        currentSongIndex = (currentSongIndex - 1 + playlist.length) % playlist.length;
+        loadSong(currentSongIndex);
+        musicPlayer.play();
+    }
+
+    function updatePlaylist() {
+        const playlistDiv = document.getElementById('playlist');
+        playlistDiv.innerHTML = playlist.map((song, idx) => {
+            const playing = idx === currentSongIndex ? '▶ ' : '  ';
+            const style = idx === currentSongIndex ? 'font-weight: bold; color: #663399;' : 'cursor: pointer;';
+            return `<div style="${style}" onclick="loadSong(${idx}); musicPlayer.play();">${playing}${song.title}</div>`;
+        }).join('');
+    }
+
+    // Auto-advance to next song
+    musicPlayer.addEventListener('ended', nextSong);
+
+    // Initialize
+    loadSong(currentSongIndex);
+
+    // Click anywhere to start
+    document.body.addEventListener('click', function() {
+        if (musicPlayer.paused) {
+            musicPlayer.play();
+        }
+    }, { once: true });
+
+</script>
+
+</body>
+</html>

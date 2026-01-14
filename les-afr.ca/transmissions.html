@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TRANSMISSIONS - LES AFR, INC.</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #000;
+            font-family: "Courier New", monospace;
+            margin: 0;
+            padding: 20px;
+            color: #0F0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #0a0a0a;
+            border: 3px solid #0F0;
+            padding: 20px;
+            box-shadow: 0 0 20px #0F0;
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #0F0;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            animation: flicker 3s infinite;
+        }
+
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        .header h1 {
+            font-size: 36px;
+            margin: 5px 0;
+            text-shadow: 0 0 10px #0F0;
+            letter-spacing: 5px;
+        }
+
+        .tagline {
+            color: #0F0;
+            font-style: italic;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .instructions {
+            background-color: #1a1a1a;
+            border: 1px dashed #0F0;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 11px;
+        }
+
+        .instructions a {
+            color: #0F0;
+            text-decoration: underline;
+        }
+
+        .instructions a:hover {
+            color: #FFF;
+            background-color: #0F0;
+        }
+
+        .transmissions-feed {
+            background-color: #000;
+            border: 2px solid #0F0;
+            padding: 20px;
+            margin: 20px 0;
+            height: 600px;
+            overflow-y: scroll;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        .transmission {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-left: 3px solid #0F0;
+            padding-left: 15px;
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .transmission-meta {
+            color: #0a0;
+            font-size: 10px;
+            margin-bottom: 5px;
+        }
+
+        .transmission-text {
+            color: #0F0;
+            text-transform: uppercase;
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 12px;
+        }
+
+        .back-link a {
+            color: #0F0;
+            text-decoration: none;
+            border: 1px solid #0F0;
+            padding: 10px 20px;
+            display: inline-block;
+        }
+
+        .back-link a:hover {
+            background-color: #0F0;
+            color: #000;
+        }
+
+        .status-bar {
+            background-color: #0F0;
+            color: #000;
+            padding: 5px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+            animation: blink 2s infinite;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0.7; }
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            font-size: 14px;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        /* Scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #000;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #0F0;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0a0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚡ TRANSMISSIONS ⚡</h1>
+            <div class="tagline">BREATHING TOGETHER // CONSPIRING IN REAL-TIME</div>
+        </div>
+
+        <div class="status-bar">
+            ⚠️ LIVE FEED ACTIVE // ALL SIGNALS WELCOME // NO CURATION // PURE CHAOS ⚠️
+        </div>
+
+        <div class="instructions">
+            <b>HOW TO TRANSMIT:</b><br>
+            → Fork the repo: <a href="https://github.com/les-afr/les-afr" target="_blank">github.com/les-afr/les-afr</a><br>
+            → Add your transmission to transmissions.json<br>
+            → Submit a pull request<br>
+            → Your signal joins the void<br><br>
+
+            <b>OR USE THE TERMINAL:</b><br>
+            <code>./add-transmission.sh "YOUR MESSAGE HERE"</code><br><br>
+
+            <b>GUIDELINES (loose):</b><br>
+            → Keep it cryptic<br>
+            → Keep it cosmic<br>
+            → Keep it conspiratorial<br>
+            → ALL CAPS ENCOURAGED<br>
+            → Make it weird
+        </div>
+
+        <div class="transmissions-feed" id="transmissions-feed">
+            <div class="loading">LOADING TRANSMISSIONS FROM THE VOID...</div>
+        </div>
+
+        <div class="back-link">
+            <a href="index.html">← RETURN TO HQ</a>
+        </div>
+    </div>
+
+<script>
+    // Load transmissions from JSON
+    fetch('transmissions.json')
+        .then(response => response.json())
+        .then(data => {
+            const feed = document.getElementById('transmissions-feed');
+            feed.innerHTML = '';
+
+            // Reverse to show newest first
+            const transmissions = data.transmissions.reverse();
+
+            if (transmissions.length === 0) {
+                feed.innerHTML = '<div class="loading">NO TRANSMISSIONS YET // BE THE FIRST TO TRANSMIT</div>';
+                return;
+            }
+
+            transmissions.forEach(t => {
+                const div = document.createElement('div');
+                div.className = 'transmission';
+
+                const meta = document.createElement('div');
+                meta.className = 'transmission-meta';
+                meta.textContent = `[${t.timestamp}] ${t.source ? '// SOURCE: ' + t.source : '// ANONYMOUS'}`;
+
+                const text = document.createElement('div');
+                text.className = 'transmission-text';
+                text.textContent = t.message;
+
+                div.appendChild(meta);
+                div.appendChild(text);
+                feed.appendChild(div);
+            });
+        })
+        .catch(error => {
+            console.error('Error loading transmissions:', error);
+            document.getElementById('transmissions-feed').innerHTML =
+                '<div class="loading">ERROR LOADING TRANSMISSIONS // SIGNAL DISRUPTED</div>';
+        });
+</script>
+
+</body>
+</html>
