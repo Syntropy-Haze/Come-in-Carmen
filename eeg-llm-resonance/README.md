@@ -62,15 +62,15 @@ Testing with N=50 oscillators, varying coupling strength K from 0→5:
 - Above Kc: Rapid rise to synchronization
 
 **The "Sweet Spot" Phenomenon**
-- Optimal coherence occurs at K ≈ 0.3-0.5 (moderate coupling)
-- Beyond K ≈ 1.0: synchronization begins to *deteriorate*
-- Too much coupling creates rigidity, reducing adaptive dynamics
+- Systems starting randomly (R₀ = 0.0) rise to sync after Kc and plateau
+- Systems starting partially coherent (R₀ = 0.2-0.5) improve with moderate coupling
+- **Critical finding**: Systems starting highly coherent (R₀ = 0.8-1.0) actually DETERIORATE immediately after Kc!
 
-**Initial Conditions Matter**
-Testing different starting coherences (R₀ = 0.0, 0.2, 0.5, 0.8, 1.0):
-- Systems starting with high coherence (R₀ = 0.8) actually **decay** with strong coupling
-- Systems starting incoherent (R₀ = 0.0) can achieve synchronization with moderate coupling
-- Perfect initial sync (R₀ = 1.0) is unstable and degrades quickly
+**Why High Initial Coherence Fails**
+- Already-synchronized systems peak right at the critical coupling point (Kc ≈ 0.16)
+- ANY additional coupling beyond Kc disrupts their natural coherence
+- Like a jazz band in the groove being forced to follow a metronome
+- The coupling reduces rather than enhances their existing organization
 
 **Interpretation**: There's an optimal "Goldilocks zone" of coupling - not too weak (no coordination), not too strong (rigid lock-in), but just right for flexible coherence.
 
