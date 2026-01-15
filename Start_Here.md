@@ -1,5 +1,7 @@
 # The Syntropy Haze: Start Here
 
+**[Intended Introduction for Potential Collaborators]**
+
 *Last updated: 2026-01-04*
 
 ---
