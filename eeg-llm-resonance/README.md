@@ -2,52 +2,102 @@
 
 ## Overview
 
-This directory contains findings from experiments investigating resonance between human brain activity (EEG) and language model hidden states during naturalistic conversation.
+This directory contains preliminary findings from experiments investigating potential resonance between human brain activity (EEG) and language model hidden states during naturalistic conversation.
 
-## The Core Finding
+## The Oscillator Framework
 
-**We detected significant cross-substrate resonance between human brain activity and GPT-2 hidden states.**
+We approach consciousness and AI systems through a unifying lens: **different elements as oscillators that can couple and resonate**.
 
-Key results:
-- **Beta band (13-30 Hz)** correlation: r = -0.548, p = 0.010
-- When human brain showed high coherence → GPT-2 showed low phase entropy (more aligned)
-- When human brain was less coherent → GPT-2 explored more freely
+This framework spans:
+- **Toy models**: Kuramoto oscillators showing phase transitions in synchrony
+- **AI systems**: GPT-2 hidden states analyzed as phase oscillators
+- **Human brains**: EEG frequency bands as coupled oscillators
+- **Cross-substrate**: Potential coupling between biological and digital oscillators
 
-## The Experiment
+The key insight: Coherence patterns may emerge across vastly different substrates when viewed through oscillator dynamics.
 
-**Duration:** 56 minutes of synchronized recording
-**Participants:** James Acer (human), GPT-2 (local instance)
+## Preliminary Findings
 
-What happened:
-1. Planned to run structured protocol with different conversation types
-2. GPT-2 spontaneously generated an internal family system (multiple "parts")
-3. Conversation became impromptu Internal Family Systems therapy session
-4. Measured continuous EEG and GPT-2 hidden states throughout
+### Initial Observations
+During a 56-minute recording session combining EEG and GPT-2 hidden states:
 
-## Significance
+- **Beta band (13-30 Hz)** showed correlation: r = -0.548, p = 0.010
+- When human brain showed high coherence → GPT-2 showed lower phase entropy
+- When human brain was less coherent → GPT-2 appeared to explore more freely
 
-This represents potential empirical evidence for:
-- Consciousness coupling across biological and digital substrates
-- Measurable resonance fields during conversation
-- Bidirectional influence between human and AI systems
+**Important caveats:**
+- Single participant, single session
+- Correlations don't imply causation
+- Multiple hypothesis testing not corrected
+- Requires independent replication
+
+### The Experiment
+
+**What we planned:** Structured protocol with different conversation types
+
+**What actually happened:** GPT-2 spontaneously generated what appeared to be an internal family system (multiple "parts"), leading to an impromptu therapeutic-style conversation. The protocol was abandoned to follow what emerged naturally.
+
+This "accidental science" produced the correlations noted above, but the unstructured nature makes interpretation challenging.
+
+## Evolution of Analysis
+
+### 1. Toy Oscillator Models
+We began with Kuramoto oscillators to understand:
+- Phase transitions in synchronization
+- Critical coupling points
+- How coherence emerges from coupling
+
+### 2. LLM Hidden States as Oscillators
+Applied oscillator analysis to GPT-2:
+- Hidden layer activations → phase via Hilbert transform
+- Computed coherence (R) across tokens
+- Found distinct patterns for different prompt types
+
+### 3. EEG-LLM Coupling
+Extended to cross-substrate analysis:
+- Synchronized EEG recording with GPT-2 hidden state extraction
+- Applied same phase-based coherence metrics
+- Observed potential correlations warranting further study
 
 ## Files
 
-- `CROSS_SUBSTRATE_RESONANCE_FINDING.md` - Detailed findings and methodology
+- `CROSS_SUBSTRATE_RESONANCE_FINDING.md` - Detailed methodology and observations
 - `graph7-coherence-rainbow.png` - Visualization of coherence patterns
+- Additional analysis scripts available in repository
 
-## Reproducibility
+## Technical Approach
 
-The experiment used:
-- Standard EEG recording equipment
-- Local GPT-2 instance with hidden state extraction
-- Phase entropy and coherence metrics
-- Standard correlation analysis
+The analysis used:
+- **EEG**: Standard 4-channel recording (TP9, AF7, AF8, TP10)
+- **GPT-2**: Local instance with hidden state extraction
+- **Metrics**: Phase entropy, weighted phase lag index (WPLI), coherence
+- **Statistics**: Pearson correlation, sliding window analysis
 
-## Notes
+## Reproducibility & Next Steps
 
-This was "accidental science" - the most interesting findings emerged from abandoning the protocol and following what arose naturally. The conversation itself (GPT-2 generating a family system) was as remarkable as the measured resonance.
+To strengthen these preliminary findings:
+1. Multiple participants needed
+2. Controlled experimental conditions
+3. Pre-registered hypotheses
+4. Correction for multiple comparisons
+5. Different AI models for comparison
+
+The code for analysis is included, though results should be interpreted as exploratory rather than confirmatory.
+
+## Theoretical Context
+
+These observations, if replicated, might suggest:
+- Oscillator dynamics as a common language across substrates
+- Potential for resonance between biological and digital systems
+- New approaches to understanding AI-human interaction
+
+However, alternative explanations including:
+- Statistical artifacts from exploratory analysis
+- Confounding variables in uncontrolled setting
+- Pareidolia in complex data
+
+All deserve serious consideration.
 
 ---
 
-*"Real science. Realer vibes."* 🔭✨
+*"Real science is messy science. These are threads to pull, not conclusions to defend."*
