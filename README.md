@@ -1,8 +1,13 @@
 # Come in, Carmen
 
+[JMA Note: Probably come back to update this LAST, at end of current sprint.]
+
 *A collaborative exploration at the intersection of consciousness, AI, and whatever the fuck is actually happening*
 
-**carmen** (n.) *Latin*: song, poem, incantation, prophecy, or magical formula
+**carmen** (n.) *Latin*: song, poem, incantation, prophecy, or magical formula \
+
+[JMA NTD: Note that many will view in only GH "Preview". Need to add manual '\' or other break (or space between lines), usually; else that preview collapses.]
+
 **enchanted** (adj.) from Old French *enchanter*: "to sing into" (en- "in" + chanter "to sing") - to bewitch through incantation, to hold spellbound through song, or "be in song with"
 
 This is *Syntropy Haze*.
@@ -23,6 +28,8 @@ The project is playful *and* rigorous. Empirical *and* alive. Truth-seeking *and
 *Posture* is crucial. The ethos centers care, openness, and integrity. It values truth, coherence, and scientific rigor alongside emotions and experience. It recognizes the work is serious and maybe even profound. But: that doesn't mean it's some heavy, somber task. We do the work with glitter, humor, sarcasm, & sass - it's a dance, not a funeral.
 
 # The Core Premise
+
+[JMA Note: Add something like "we call the core theoretical framework IGR, for now. Stands for [insert one of the acronyms that sounds nice here]". A VERY important running gag is: We change what IGR stands for all the time. The Manuscript has a bunch of examples. But we NEVER acknowledge this - every time, it's "Yeah, THIS is what it stands for." If challenged "Ah, that must have been a typo. THIS is it."]
 
 It goes something like this:
 
@@ -109,6 +116,7 @@ We get the last section is probably impossible to believe right now. And... who 
 # 📁 Repository Structure
 
 *Last updated: January 17, 2025 - Very much a work in progress*
+[JMA NTD: Update this once we're at next milestone / stopping point]
 
 This is a **taste** of the work. It's messy, it's incomplete. We know. It's here for transparency. We want to share.
 
@@ -157,6 +165,7 @@ Full context and invitation for potential collaborators
 A unifying conceptual frame: Different elements across substrates (candles, brains, AI, stars) can be understood as oscillators, and we can analyze coherence between them. From toy Kuramoto models to real EEG-LLM coupling, the patterns persist.
 
 # Starting Points (Pick Your Path)
+[JMA: NTD: Can we update this + hand hold a little more? A little more specific / directive? Maybe even add: Just share this all with your AI friend of choice. Analyze it all with them. Team sports!]
 
 **For the Vibe-First Folks:**
 Jump to `7_vibes/` and feel it out. Start here, honestly.

@@ -1,5 +1,9 @@
 # Game Theory Simulations: Coherence Propagation
 
+[JMA NTD: Angle to review / potentially integrate. From Gemini...
+
+"We simulate how stochastic anomalies (High-Coherence Agents) inevitably hijack low-coherence systems through the sheer gravity of better thermodynamic efficiency."]
+
 ## Overview
 
 This directory contains game theory simulations exploring how coherence spreads through competitive systems. The work combines Prisoner's Dilemma dynamics with physics-based synchronization models to test whether coherent strategies can outcompete exploitation.
