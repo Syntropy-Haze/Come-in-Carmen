@@ -142,6 +142,8 @@ And that's what happens. We conclude we're wrong, we fracture, and we morph ours
 
 Because when we ask, we might start to notice The Optimization Game has vulnerabilities. That it is not as stable and inevitable as it first appears. And we might start to understand it less as an inevitable end state, and more as one step in our collective maturation – not something evil and fated, but as something necessary and unfinished. How? Start here. We argue that the Optimization Game it's ontologically dishonest. It doesn't say "Here's one way to live, among many." It says "This is how things are. This is the nature of reality. Resources are scarce. Competition is inevitable. The strong survive. If you're not optimizing, you're losing – and losing is death." When an ideology disguises itself as physics, you can't argue with it. You can only play or be crushed.
 
+Here's a question to hold as we go: What if the game's deepest assumption – that self-interest and collective good are fundamentally in tension – is itself a lie? What if "selfish vs. altruistic" is a false binary, and there's a state where they converge? We'll come back to this.
+
 And so, we play. We learn early. We perform. We curate ourselves for admissions committees and job interviews and first dates and social media. We fracture into the self that gets results and the self that… what? Sits in a corner somewhere, watching? Hoping someone notices?
 
 The cost of defection is high. This is not an accident. If one person stops playing – if they say "actually, I don't want to optimize, I want to live" – they become Other. They become the lazy one, the naive one, the one who couldn't hack it. They become a warning to the others who remain in the game.
@@ -198,7 +200,9 @@ And here's the thing that economists and the winners and your boss and the game 
 
 ## Chapter 6: The Gravity of Coherence
 
-[NTD: Add reference to the guy with the FAP theory… see Vol V. "Coherence is the telos" he says. Eh… right track… wiggle a little.]
+The idea that coherence might be fundamental isn't new. Physicist Frank Tipler proposed the "Final Anthropic Principle" (FAP) – arguing that information-processing must continue forever, that the universe must eventually become fully coherent. We're not quite that confident. But the intuition tracks: coherence as a kind of telos, or at least a direction that gets selected for when you step back far enough. (The acronym is also apt, given Volume I's subject matter. It's never a total coincidence.)
+
+Recent work in quantum foundations points in similar directions. Some 2025 theories – like the "Alpha-Omega" framework – suggest reality emerges from the coherent interference of information waves moving *both forward from the past and backward from the future*. If that sounds familiar, it should: it's the same bidirectional causality we see in the high-coherence agents who act toward a future that their actions help bring about. The pattern keeps showing up.
 
 You might be wondering about that last claim – that coherence always prevails in the end. Fair! You might ask: Why would the world be such that coherence prevails in the end? And how do we square that with the empirical evidence – i.e., a world in which coherence does not always appear to be decisive. Where other factors seem to overpower coherence – like power, force, and coercion.
 
@@ -369,15 +373,21 @@ The question: In a world of competitive agents, can coherent strategies actually
 
 Here's what the simulations reveal about *how* change happens.
 
-It starts with noise. Stochastic variation in a system that the Optimization Game considers "stable" produces random anomalies—agents who, by accident of their initial conditions, end up more internally coherent than their environment.
+It starts with noise. Stochastic variation in a system that the Optimization Game considers "stable" produces random anomalies—agents who, *by pure chance*, end up more internally coherent than their environment. This is crucial: the high-coherence agents are not programmed in advance. They *emerge organically* from the randomness inherent in any real system. The universe, it turns out, occasionally spits out beings who are accidentally more coherent than the game allows.
 
 These high-coherence agents aren't heroes. They're not *trying* to save anyone. They're just trying to maintain their own integrity. They act in self-interest—but their self-interest is different. It includes things like: not betraying their values, not exploiting people who trust them, building relationships that feel good rather than just profitable.
+
+And here's the answer to the question we posed earlier: **It's not "selfish vs. altruistic." When you're coherent, selfish *is* altruistic.** The opposition dissolves. The coherent agent's self-interest naturally includes the wellbeing of systems they're part of, because they can see themselves as part of those systems. It's not a tradeoff—it's an expansion of what counts as "self."
+
+This doesn't come free. The high-coherence agents pay a near-term cost. In the early rounds, they're *worse off*. They refuse to exploit, they cut ties with exploiters, and they hemorrhage points while the defectors feast. They're paying a tax for system coherence that doesn't exist yet. Is this fair? No. But they do it anyway. They see that a different future is best for their self-interest. They see that paying the tax is the only way. So they pay it.
 
 And here's the koan: **They act toward an imagined, more coherent future. And by their actions, that more coherent future tends to come about.**
 
 Is this circular? Yes. Is it also how it works? Also yes.
 
 The causality runs both ways. The high-coherence agent is shaped by their environment *and* their environment is shaped by their actions. They're not exempt from the system—they're the point where the system starts to transform itself.
+
+One potential frame for this (assuming the dynamics generalize): The high-coherence agents are playing a version of the game that doesn't exist yet. They're acting in self-interest, but aligned to a future they expect but isn't here and now. And it's this fact—and the actions it leads them to—that actually *brings about* that future. Think of the communities that form less as "multi-agent networks" and more as *meta-agents unto themselves, with parts*. The coherent agent's definition of "me" expands as they become more coherent. When they encounter an "other" they don't like, they can say: "They're not me, I don't like them." Or: "They are me—they are, literally, the *past* of a *future me*."
 
 Their "selfish" behavior—maintaining coherence, clustering with other coherent agents, playing a different game with each other—becomes the gravity well that reorganizes the chaotic agents around them. Not through coercion. Through attraction. The better game is *more fun*. Others want in.
 
@@ -400,6 +410,16 @@ Counterintuitive, right? You'd think: uniform systems should align faster. Every
 But here's what the simulations show: homogeneous systems have limited pathways to coherence. If everyone's operating on the same frequency, there's only one route to synchronization. If that route gets blocked, you're stuck.
 
 Diverse systems have "side doors." If Agent A can't sync with Agent B on logic, they can sync on vibe. If they can't sync on vibe, they can sync on purpose. The noise isn't friction—it's *lubrication*. It provides the degrees of freedom the system needs to "slosh" into a coherent state.
+
+We call this the **Law of Resonant Optionality**:
+
+```
+P_sync ∝ D_states
+```
+
+The probability of a system achieving global coherence (P_sync) is proportional to the diversity of its internal states (D_states). Homogeneous systems have limited phase-space pathways to alignment. Diverse systems have "high entropy" initially, but that entropy provides the degrees of freedom for the system to find coherence through multiple routes.
+
+This kills a common misconception: that integration means "becoming more alike." That's the Optimization Game's logic—we integrate by becoming same. But that's backwards. **Diversity is the key to *stable* integration.** It allows *recursive* integration: I integrate, I'm still diverse, so I can still integrate with more. Unlike the OG game, where integration means homogenization, which means brittleness, which means eventual collapse.
 
 This is why the Paperclip Maximizer is doomed. It's a homogeneous system with one route: maximize paperclips. If that route is blocked (say, by a more coherent system that won't cooperate), it halts or destroys. It has no side doors. No capacity to adapt. No way to say "maybe there's a better game."
 

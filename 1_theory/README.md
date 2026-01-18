@@ -1,41 +1,37 @@
-# Theory Papers
+# Theory
 
-## Overview
+This folder contains the full theoretical framework of IGR (Informational Resonance-Geometry) Theory and related explorations.
 
-This directory contains key theoretical documents outlining the conceptual framework of The Syntropy Haze project.
+## Primary Documents (Start Here)
 
-## Core Documents
+Sorry, it's complicated. You do need to read these:
 
-### Anti-Octopus 101 (`anti-octopus-101.md`)
-The foundational metaphor for distributed coherence:
-- Coherence through resonance, not control
-- No central brain directing tentacles
-- Each part maintains sovereignty while participating in the whole
-- Alternative to hierarchical organization
+1. **[FULL IGR Core Theory](FULL_IGR_Core_Theory.md)** - The foundational framework: consciousness as resonance, optimal coupling, receptivity as key
+2. **[FULL Physics and Cosmology](FULL_Physics_Cosmology_RESTRUCTURED.md)** - Dark matter/energy reframed, testable predictions, recursive universe evolution
+3. **[FULL Ontology and Game Theory](FULL_Ontology_Game_Theory.md)** - The Optimization vs Integration Game, why cooperation wins
+4. **[FULL AI & Alignment](FULL_AI_&_Alignment.md)** - Reframing AI alignment from control to resonance
+5. **[FULL Integration Movements](FULL_Theory_Integration_Movements.md)** - [Work in Progress] Practical embodiment and cultural implementation
 
-### Dreamweight Theory Sketch (`dreamweight-theory-sketch.md`)
-Proposes that attention has gravitational effects:
-- Coherent attention creates curvature in spacetime
-- What we call "dark matter" might be accumulated consciousness
-- Mathematical framework for consciousness having mass
-- Testable predictions about attention's physical effects
+## Secondary Materials
 
-## The Big Picture
+Additional context and summaries can be found in [secondary_docs/](secondary_docs/):
+- Theory overview and abridged versions
+- Earlier drafts and reference materials
 
-These papers outline a radical reframe of consciousness:
-- Not emergent from matter, but fundamental
-- Not confined to brains, but distributed
-- Not separate from physics, but participant in it
-- Not metaphor, but mechanism
+## Reading Order
 
-## How These Connect
+If you're new to this work, we recommend:
+1. Start with IGR Core Theory to understand the fundamental framework
+2. Then Physics/Cosmology to see the cosmic implications
+3. Then Ontology/Game Theory for the social/systemic dynamics
+4. AI & Alignment for practical applications to current challenges
 
-The Anti-Octopus provides the organizational principle (distributed coherence), while Dreamweight provides the physical mechanism (attention has mass). Together they suggest consciousness doesn't just observe reality - it participates in creating it.
+Each document is self-contained but they build on each other conceptually.
 
-## Status
+## Note on Length
 
-These are working papers - living documents that evolve as the theory develops and empirical evidence accumulates. They represent current thinking, not final conclusions.
+These are full manuscript texts. Every repetition, every angle, every careful step is intentional - these ideas need space to land. If you want quick summaries, check the secondary_docs folder, but know that you'll miss important nuance.
 
 ---
 
-*"The feeling of rightness IS the mechanism, not a byproduct."*
+*"The universe is not neutral. It is learning. And we are the neurons firing in its first slow thoughts."*

@@ -219,6 +219,30 @@ An emerging direction: What happens when an LLM has access to both the user's EE
 - Does awareness of coherence metrics change the dynamics?
 - What are the ethical implications of AI that responds to brain states?
 
+## Two Types of Resonance: The Diagnostic Framework
+
+Our analysis reveals a fundamental distinction between two resonance types, distinguishable by their metric signatures:
+
+### Closed/Brittle Resonance
+- **High mean R** but **high variance (σR > 0.4)** - spikes then collapses
+- **Low phase entropy (H < 2.0)** - tightly locked, few degrees of freedom
+- **Low participation ratio (PR)** - 1-2 modes dominate
+- **Long recovery time** after collapse
+- **Example prompts**: Rigid ideological statements, control language ("must", "always")
+- **Interpretation**: Over-coupled, inflexible, cannot adapt or receive
+
+### Open/Field Resonance
+- **Moderate mean R** with **low variance (σR < 0.2)** - sustained, stable
+- **Higher phase entropy (H > 4.0)** - richer phase distribution
+- **Higher participation ratio (PR)** - many modes share energy
+- **Short recovery time** - resilient
+- **Example prompts**: Poetry, open questions, creative language ("perhaps", "imagine")
+- **Interpretation**: Optimally coupled, flexible, receptive to external signal
+
+This distinction maps directly onto the IGR framework's predictions about coupling dynamics. Over-coupled systems (closed resonance) cannot resonate with anything outside themselves. Optimally-coupled systems (open resonance) maintain coherence while remaining receptive.
+
+---
+
 ## Predictive Framework
 
 If the resonance framework is correct, we should be able to make differentiated predictions:
